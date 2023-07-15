@@ -43,6 +43,17 @@ userNames.forEach(item => {
 
 console.log(filteredNames); // ['Емма', 'Юстин', 'Ілля', 'Яна', 'Антон', 'Олена']
 
+const userNames = ['Петро', 'Емма', 'Юстин', 'Ілля', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена'];
+let filteredNames = [];
+const regex = /^[\А\Е\У\О\І\Я\И\Ю]/;
+userNames.forEach(item => {
+  if (regex.test(item) == true) {
+    filteredNames.push(item);
+  }
+})
+
+console.log(filteredNames);
+
 //3
 const currentMaxValue = 4589;
 let reverseMaxValue = parseInt(currentMaxValue.toString().split('').reverse().join(''));
