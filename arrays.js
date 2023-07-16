@@ -16,6 +16,22 @@ initials.sort();
 
 console.log(initials);
 
+//1.1
+userNames.forEach(item => {
+  i = item.split(' ')
+  initials.push(`${i[0][0]}.${i[1][0]}.${i[2][0]}`);
+})
+initials.sort();
+
+//1.2
+userNames.map(item => {
+  return item.split(' ')
+}).forEach(i => {
+  initials.push(`${i[0][0]}.${i[1][0]}.${i[2][0]}`);
+})
+initials.sort();
+
+
 //2
 const userNames = ['Петро', 'Емма', 'Юстин', 'Ілля', 'Марта', 'Яна', 'Василь', 'Антон', 'Олена'];
 let filteredNames = userNames.filter(item => 
