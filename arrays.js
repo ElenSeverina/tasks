@@ -82,3 +82,27 @@ const resultsArray = [1, 2, [3, [4]]];
 let productOfArray = resultsArray.flat(Infinity).reduce((acc, item) => acc * item);
 
 console.log(productOfArray); // 24
+
+//5
+const array = [1, 2, 5, 7, 8, 9, 10];
+let sum = 0;
+function sumOfEvenNumbers (array) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      sum += array[i];
+    }
+  }
+  return sum;
+}
+
+console.log(sumOfEvenNumbers(array));
+
+let array1 = [5, 2, 4, 7, 3];
+let sum = 0;
+array1.forEach(item => {
+  if (item % 2 === 0) {
+    return sum += item;
+  }
+})    
+
+console.log(sum);
