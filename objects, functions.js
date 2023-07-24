@@ -1,5 +1,5 @@
 //1
-function differenceBetweenDates(startDate, endDate, value){
+function differenceBetweenDates(startDate = '31 Jan 2022', endDate = '03 Feb 2021', value = 'days'){
   let startDateValue = new Date(startDate);
   let endDateValue = new Date(endDate);
   
@@ -24,7 +24,7 @@ function differenceBetweenDates(startDate, endDate, value){
   }
 }
 
-console.log(differenceBetweenDates('31 Jan 2022', '03 Feb 2021', 'days'));
+console.log(differenceBetweenDates());
 
 //2
 const priceData = {
